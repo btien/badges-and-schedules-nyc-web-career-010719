@@ -28,11 +28,12 @@ end
 def printer(speakers)
   counter = 0
   counter2 = 0
-  
-  while counter < batch_badge_creator.size
-    puts "#{batch_badge_creator[counter]}"
+  print_speakers = batch_badge_creator(speakers)
+  print_rooms = assign_rooms(speakers)
+  while counter < print_speakers.size
+    puts "#{print_speakers[counter]}"
   end
-  while counter2 < assign_rooms.size
-    puts "#{assign_rooms[counter2]}"
+  while counter2 < print_rooms.size
+    puts "#{print_rooms[counter2]}"
   end
 end
