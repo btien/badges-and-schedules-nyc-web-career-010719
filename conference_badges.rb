@@ -26,9 +26,12 @@ def assign_rooms(speakers)
 end
 
 def printer
-  
-end
-
-def printer
-
+  counter = 0
+  counter2 = 0
+  while counter < batch_badge_creator.size
+    puts "#{batch_badge_creator[counter]}"
+  end
+  while counter2 < assign_rooms.size
+    puts "#{assign_rooms[counter]}"
+  end
 end
