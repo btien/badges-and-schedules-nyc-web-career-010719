@@ -32,8 +32,10 @@ def printer(speakers)
   print_rooms = assign_rooms(speakers)
   while counter < print_speakers.size
     puts "#{print_speakers[counter]}"
+    counter += 1
   end
   while counter2 < print_rooms.size
     puts "#{print_rooms[counter2]}"
+    counter2 += 1
   end
 end
